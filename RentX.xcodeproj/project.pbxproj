@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E7F2FEE25D2B7C800ABCCAE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */; };
+		1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */; };
+		1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */; };
+		1E7F2FF825D2B86500ABCCAE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF725D2B86500ABCCAE /* UIViewController+Ext.swift */; };
+		1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FFB25D2B8EB00ABCCAE /* UIColor+Ext.swift */; };
+		1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FFE25D2B96400ABCCAE /* UITableView+Ext.swift */; };
+		1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F300125D2B98B00ABCCAE /* String+Ext.swift */; };
+		1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F300425D2B9A600ABCCAE /* Date+Ext.swift */; };
 		1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1787B25D24A3800AD794E /* AppDelegate.swift */; };
 		1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1787D25D24A3800AD794E /* SceneDelegate.swift */; };
 		1EC1788025D24A3800AD794E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1787F25D24A3800AD794E /* ViewController.swift */; };
@@ -17,6 +25,14 @@
 
 /* Begin PBXFileReference section */
 		14789F65A3AA63FCE3E1777C /* Pods-RentX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.release.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.release.xcconfig"; sourceTree = "<group>"; };
+		1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		1E7F2FF725D2B86500ABCCAE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		1E7F2FFB25D2B8EB00ABCCAE /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		1E7F2FFE25D2B96400ABCCAE /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		1E7F300125D2B98B00ABCCAE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		1E7F300425D2B9A600ABCCAE /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		1EC1787825D24A3800AD794E /* RentX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC1787B25D24A3800AD794E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC1787D25D24A3800AD794E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E7F2FEC25D2B7A800ABCCAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */,
+				1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */,
+				1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */,
+				1E7F2FF725D2B86500ABCCAE /* UIViewController+Ext.swift */,
+				1E7F2FFB25D2B8EB00ABCCAE /* UIColor+Ext.swift */,
+				1E7F2FFE25D2B96400ABCCAE /* UITableView+Ext.swift */,
+				1E7F300125D2B98B00ABCCAE /* String+Ext.swift */,
+				1E7F300425D2B9A600ABCCAE /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1EC1786F25D24A3800AD794E = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +92,7 @@
 		1EC1787A25D24A3800AD794E /* RentX */ = {
 			isa = PBXGroup;
 			children = (
+				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
 				1EC1787B25D24A3800AD794E /* AppDelegate.swift */,
 				1EC1787D25D24A3800AD794E /* SceneDelegate.swift */,
 				1EC1787F25D24A3800AD794E /* ViewController.swift */,
@@ -202,8 +234,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC1788025D24A3800AD794E /* ViewController.swift in Sources */,
+				1E7F2FEE25D2B7C800ABCCAE /* UIView+Ext.swift in Sources */,
+				1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */,
+				1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */,
+				1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */,
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
+				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
+				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
+				1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */,
 				1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */,
+				1E7F2FF825D2B86500ABCCAE /* UIViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
