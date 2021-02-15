@@ -39,7 +39,7 @@
 		1EC1787F25D24A3800AD794E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EC1788425D24A3900AD794E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EC1788725D24A3900AD794E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RentX/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		75ECB316FCB4A8B3AC851325 /* Pods-RentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.debug.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.debug.xcconfig"; sourceTree = "<group>"; };
 		E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +71,74 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1E80004825DACB89002E5C62 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EC1788425D24A3900AD794E /* Assets.xcassets */,
+				1EC1788925D24A3900AD794E /* Info.plist */,
+				1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		1E80004A25DACC3F002E5C62 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1EC1787B25D24A3800AD794E /* AppDelegate.swift */,
+				1EC1787D25D24A3800AD794E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1E80004B25DACC4C002E5C62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E80004C25DACC52002E5C62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E80004D25DACC58002E5C62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E80004E25DACC5E002E5C62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E80004F25DACC65002E5C62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1E80005025DACC73002E5C62 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1E80005125DACC8E002E5C62 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		1EC1786F25D24A3800AD794E = {
 			isa = PBXGroup;
 			children = (
@@ -92,13 +160,17 @@
 		1EC1787A25D24A3800AD794E /* RentX */ = {
 			isa = PBXGroup;
 			children = (
+				1E80005125DACC8E002E5C62 /* Services */,
+				1E80004F25DACC65002E5C62 /* Utils */,
+				1E80004E25DACC5E002E5C62 /* ViewModel */,
+				1E80004D25DACC58002E5C62 /* View */,
+				1E80004C25DACC52002E5C62 /* Model */,
+				1E80004B25DACC4C002E5C62 /* Controller */,
+				1E80005025DACC73002E5C62 /* Coordinator */,
+				1E80004A25DACC3F002E5C62 /* App */,
+				1E80004825DACB89002E5C62 /* Support Files */,
 				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
-				1EC1787B25D24A3800AD794E /* AppDelegate.swift */,
-				1EC1787D25D24A3800AD794E /* SceneDelegate.swift */,
 				1EC1787F25D24A3800AD794E /* ViewController.swift */,
-				1EC1788425D24A3900AD794E /* Assets.xcassets */,
-				1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */,
-				1EC1788925D24A3900AD794E /* Info.plist */,
 			);
 			path = RentX;
 			sourceTree = "<group>";
@@ -384,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RentX/Info.plist;
+				INFOPLIST_FILE = "RentX/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RentX/Info.plist;
+				INFOPLIST_FILE = "RentX/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
