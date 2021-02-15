@@ -96,7 +96,6 @@ extension UIView {
                bottom: view.bottomAnchor, right: view.rightAnchor)
     }
     
-    
     func addSubViews(_ views: UIView...) {
         for view in views { addSubview(view) }
     }
