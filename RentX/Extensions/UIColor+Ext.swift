@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 extension UIColor {
     public convenience init?(hexDecimal: String) {
         let red, green, blue, alpha: CGFloat
