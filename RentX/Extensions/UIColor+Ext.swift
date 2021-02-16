@@ -34,4 +34,12 @@ extension UIColor {
     static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }
+    
+    struct Palette {
+        static let darkGray     = UIColor.rgb(red: 61, green: 61, blue: 77)
+        static let mediumGray   = UIColor.rgb(red: 122, green: 122, blue: 128)
+        static let gray         = UIColor.rgb(red: 174, green: 174, blue: 179)
+        static let lightGray    = UIColor.rgb(red: 242, green: 242, blue: 250)
+        static let red          = UIColor.rgb(red: 220, green: 22, blue: 55)
+    }
 }

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  RentX
+
+  Created by Rafael V. dos Santos on 15/02/21.
+  
+*/
+
+"loginTitle"        = "Estamos quase lá.";
+"loginDescription"  = "Faça seu login para começar uma experiencia incrivel.";
+"forgotPassword"    = "Esqueci minha senha";
+"rememberMe"        = "Lembrar-me";
