@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol AppFlowDelegate: class {
+    func showWelcome()
+    func showOnboarding()
+}
+
 class AppCoordinator {
     
     // MARK: - Properties
@@ -22,18 +27,39 @@ class AppCoordinator {
 // MARK: - Coordinator Protocol
 extension AppCoordinator: Coordinator {
     func start() {
-        self.showLoginScreen()
+        self.showWelcomeScreen()
+//        self.showOnboardingScreen()
     }
 }
 
 // MARK: - Methods
 extension AppCoordinator {
-    private func showLoginScreen() {
+    private func showWelcomeScreen() {
         self.rootViewController = UINavigationController()
         self.window.rootViewController = self.rootViewController
         self.window.makeKeyAndVisible()
         
-        let loginCoordinator = LoginCoordinator(navigationController: self.rootViewController as! UINavigationController)
-        coordinate(to: loginCoordinator)
+        let welcomeCoordinator = WelcomeCoordinator(navigationController: self.rootViewController
+                                                        as! UINavigationController)
+        welcomeCoordinator.coordinator = self
+        coordinate(to: welcomeCoordinator)
+    }
+    
+    private func showOnboardingScreen() {
+        let onboarding = OnboardingController()
+        onboarding.coordinator = self
+        self.window.rootViewController = onboarding
+        self.window.makeKeyAndVisible()
+    }
+}
+
+// MARK: - AppFlowDelegate
+extension AppCoordinator: AppFlowDelegate {
+    func showWelcome() {
+        self.showWelcomeScreen()
+    }
+    
+    func showOnboarding() {
+        self.showOnboardingScreen()
     }
 }

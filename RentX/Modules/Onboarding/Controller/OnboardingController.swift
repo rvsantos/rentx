@@ -18,6 +18,8 @@ class OnboardingController: UIViewController {
               description: "Vários modelos para você dirigir seguro, com conforto e segurança.",
               icon: "car-icon")]
     
+    weak var coordinator: AppFlowDelegate?
+    
     private let containerPageControl: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -130,7 +132,7 @@ extension OnboardingController {
         let newRow = self.getCurrentIndex() + 1
         
         if newRow >= self.content.count {
-            print("Go to Welcome screen")
+            self.coordinator?.showWelcome()
         } else {
             let nextIndexPath = IndexPath(row: newRow, section: 0)
             self.collectionView.scrollToItem(at: nextIndexPath, at: .left, animated: true)

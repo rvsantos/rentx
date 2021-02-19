@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */; };
+		1E0678D625DE20BF00CB6605 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0678D525DE20BF00CB6605 /* Onboarding.swift */; };
 		1E0E700125DAE76C00F2A376 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700025DAE76C00F2A376 /* Inter-Medium.ttf */; };
 		1E0E700425DAE77C00F2A376 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */; };
 		1E0E700B25DAE8B800F2A376 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E700A25DAE8B800F2A376 /* UIFont+Ext.swift */; };
 		1E0E700E25DAEAE500F2A376 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700D25DAEAE500F2A376 /* Inter-Regular.ttf */; };
 		1E0E701125DAED5100F2A376 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E701025DAED5100F2A376 /* UITextField+Ext.swift */; };
+		1E0FF24225DF778F00F0AA63 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */; };
+		1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */; };
 		1E7F2FEE25D2B7C800ABCCAE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */; };
 		1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */; };
 		1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */; };
@@ -26,22 +30,28 @@
 		1E80008225DAD3D5002E5C62 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80008125DAD3D5002E5C62 /* LoginController.swift */; };
 		1E80008725DAD672002E5C62 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80008625DAD672002E5C62 /* Utilities.swift */; };
 		1E80008A25DADD48002E5C62 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E80008925DADD48002E5C62 /* Localizable.strings */; };
+		1E95776125E01279002AFB04 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95776025E01278002AFB04 /* WelcomeController.swift */; };
 		1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1787B25D24A3800AD794E /* AppDelegate.swift */; };
 		1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1787D25D24A3800AD794E /* SceneDelegate.swift */; };
-		1EC1788025D24A3800AD794E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1787F25D24A3800AD794E /* ViewController.swift */; };
 		1EC1788525D24A3900AD794E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788425D24A3900AD794E /* Assets.xcassets */; };
 		1EC1788825D24A3900AD794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */; };
 		1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C17D25DB38FC004AC604 /* Checkbox.swift */; };
+		1ED3C18225DB709A004AC604 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18125DB709A004AC604 /* RegistrationController.swift */; };
+		1ED3C18525DB70C7004AC604 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18425DB70C7004AC604 /* RegistrationCoordinator.swift */; };
 		70754579938A838ED17E843D /* Pods_RentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14789F65A3AA63FCE3E1777C /* Pods-RentX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.release.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.release.xcconfig"; sourceTree = "<group>"; };
+		1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		1E0678D525DE20BF00CB6605 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		1E0E700025DAE76C00F2A376 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBold.ttf"; sourceTree = "<group>"; };
 		1E0E700A25DAE8B800F2A376 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		1E0E700D25DAEAE500F2A376 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		1E0E701025DAED5100F2A376 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
 		1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
@@ -56,14 +66,16 @@
 		1E80008125DAD3D5002E5C62 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		1E80008625DAD672002E5C62 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1E80008925DADD48002E5C62 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1E95776025E01278002AFB04 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		1EC1787825D24A3800AD794E /* RentX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC1787B25D24A3800AD794E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC1787D25D24A3800AD794E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EC1787F25D24A3800AD794E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EC1788425D24A3900AD794E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EC1788725D24A3900AD794E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RentX/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		1ED3C17D25DB38FC004AC604 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		1ED3C18125DB709A004AC604 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		1ED3C18425DB70C7004AC604 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		75ECB316FCB4A8B3AC851325 /* Pods-RentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.debug.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.debug.xcconfig"; sourceTree = "<group>"; };
 		E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0678CE25DE1F3500CB6605 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1E0FF24025DF778200F0AA63 /* View */,
+				1E0678D425DE20B000CB6605 /* Model */,
+				1E0678CF25DE1F7800CB6605 /* Controller */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1E0678CF25DE1F7800CB6605 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E0678D425DE20B000CB6605 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E0678D525DE20BF00CB6605 /* Onboarding.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1E0E6FFF25DAE73100F2A376 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +126,30 @@
 				1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1E0FF24025DF778200F0AA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E2D4AEF25E019F100660250 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E95776025E01278002AFB04 /* WelcomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E2D4AF025E019F800660250 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		1E7F2FEC25D2B7A800ABCCAE /* Extensions */ = {
@@ -131,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				1E80008125DAD3D5002E5C62 /* LoginController.swift */,
+				1ED3C18125DB709A004AC604 /* RegistrationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +248,8 @@
 		1E80007B25DAD2CC002E5C62 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1E0678CE25DE1F3500CB6605 /* Onboarding */,
+				1ED3C18025DB6C8C004AC604 /* Welcome */,
 				1E80007C25DAD2E2002E5C62 /* Login */,
 			);
 			path = Modules;
@@ -206,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				1E80007E25DAD30D002E5C62 /* LoginCoordinator.swift */,
+				1ED3C18425DB70C7004AC604 /* RegistrationCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -238,9 +304,17 @@
 				1E80004A25DACC3F002E5C62 /* App */,
 				1E80004825DACB89002E5C62 /* Support Files */,
 				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
-				1EC1787F25D24A3800AD794E /* ViewController.swift */,
 			);
 			path = RentX;
+			sourceTree = "<group>";
+		};
+		1ED3C18025DB6C8C004AC604 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				1E2D4AF025E019F800660250 /* Coordinator */,
+				1E2D4AEF25E019F100660250 /* Controller */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		C1847E5359D0704C86C1755F /* Pods */ = {
@@ -377,24 +451,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EC1788025D24A3800AD794E /* ViewController.swift in Sources */,
 				1E0E701125DAED5100F2A376 /* UITextField+Ext.swift in Sources */,
 				1E7F2FEE25D2B7C800ABCCAE /* UIView+Ext.swift in Sources */,
+				1E0FF24225DF778F00F0AA63 /* OnboardingCell.swift in Sources */,
+				1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */,
 				1E80007F25DAD30D002E5C62 /* LoginCoordinator.swift in Sources */,
+				1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */,
 				1E80007925DACFC0002E5C62 /* AppCoordinator.swift in Sources */,
 				1E80008225DAD3D5002E5C62 /* LoginController.swift in Sources */,
 				1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */,
 				1E80008725DAD672002E5C62 /* Utilities.swift in Sources */,
 				1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */,
+				1E0678D625DE20BF00CB6605 /* Onboarding.swift in Sources */,
 				1E0E700B25DAE8B800F2A376 /* UIFont+Ext.swift in Sources */,
 				1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */,
 				1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */,
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
 				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
+				1ED3C18525DB70C7004AC604 /* RegistrationCoordinator.swift in Sources */,
 				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
 				1E80005425DACE7F002E5C62 /* Coordinator.swift in Sources */,
 				1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */,
+				1E95776125E01279002AFB04 /* WelcomeController.swift in Sources */,
 				1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */,
+				1ED3C18225DB709A004AC604 /* RegistrationController.swift in Sources */,
 				1E7F2FF825D2B86500ABCCAE /* UIViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
