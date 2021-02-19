@@ -13,6 +13,7 @@ final class Utilities {
         label.text              = title
         label.textColor         = color
         label.font              = font
+        label.lineBreakMode     = .byWordWrapping
         label.numberOfLines     = 0
         return label
     }
