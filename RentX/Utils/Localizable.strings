@@ -6,7 +6,20 @@
   
 */
 
-"loginTitle"        = "Estamos quase lá.";
-"loginDescription"  = "Faça seu login para começar uma experiencia incrivel.";
-"forgotPassword"    = "Esqueci minha senha";
-"rememberMe"        = "Lembrar-me";
+// Login screen
+"loginTitle"                = "Estamos quase lá.";
+"loginDescription"          = "Faça seu login para começar uma experiencia incrivel.";
+"forgotPassword"            = "Esqueci minha senha";
+"rememberMe"                = "Lembrar-me";
+"email"                     = "E-mail";
+"name"                      = "Nome";
+"password"                  = "Senha";
+"repeatpass"                = "Repetir senha";
+
+// SignUp screen
+"signUpTitle"               = "Crie sua conta";
+"signUpDescription"         = "Faça seu cadastro de forma rápida e fácil.";
+"signUpSubTitleData"        = "01. Dados";
+"signUpSubTitlePassword"    = "02. Senha";
+"btNext"                    = "Próximo";
+"btSignUp"                  = "Cadastrar";

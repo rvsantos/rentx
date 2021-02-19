@@ -33,8 +33,9 @@ class LoginController: UIViewController {
         font: UIFont(fontStyle: .interRegular, size: 13)!,
         color: UIColor.Palette.mediumGray)
     
-    private let tfEmail: UITextField = Utilities.textField(placeholder: "E-mail")
-    private let tfPassword: UITextField = Utilities.textField(placeholder: "Senha", isSecure: true)
+    private let tfEmail: UITextField = Utilities.textField(placeholder: "email".localizable)
+    private let tfPassword: UITextField = Utilities.textField(
+        placeholder: "password".localizable, isSecure: true)
     private let btLogin: UIButton = Utilities.button(title: "Login")
     private let cbRememberMe: Checkbox = Checkbox()
     
@@ -56,7 +57,7 @@ extension LoginController {
     }
     
     private func setupLabels() {
-        self.view.addSubViews(self.labelTitle, self.labelDescription)
+        self.view.addSubviews(self.labelTitle, self.labelDescription)
         
         self.labelTitle.anchor(top: self.view.topAnchor, left: self.view.leftAnchor,
                                paddingTop: 160, paddingLeft: 32, width: 169)
@@ -73,7 +74,7 @@ extension LoginController {
         stack.distribution  = .fillEqually
         stack.spacing       = 8
 
-        self.view.addSubViews(stack)
+        self.view.addSubviews(stack)
         stack.anchor(top: self.labelDescription.bottomAnchor,left: self.view.leftAnchor,
                      right: self.view.rightAnchor, paddingTop: 110, paddingLeft: 24, paddingRight: 24)
         stack.centerX(inView: self.view)
@@ -89,7 +90,7 @@ extension LoginController {
     }
     
     private func setupCheckbox(stack: UIStackView) {
-        self.view.addSubViews(self.cbRememberMe, self.lbCheckbox, self.btForgotPassword)
+        self.view.addSubviews(self.cbRememberMe, self.lbCheckbox, self.btForgotPassword)
         self.cbRememberMe.anchor(top: stack.bottomAnchor, left: self.view.leftAnchor,
                                  paddingTop: 34, paddingLeft: 24)
         
