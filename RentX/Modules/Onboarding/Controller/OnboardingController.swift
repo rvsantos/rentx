@@ -56,7 +56,7 @@ class OnboardingController: UIViewController {
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         layout.estimatedItemSize = .zero
-
+        
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
@@ -100,7 +100,7 @@ extension OnboardingController {
     
     private func setupCollectionView() {
         self.collectionView.register(OnboardingCell.self, forCellWithReuseIdentifier: OnboardingCell.reuseID)
-       
+        
         self.view.addSubview(self.containerView)
         self.containerView.anchor(top: self.view.topAnchor, left: self.view.leftAnchor,
                                   bottom: self.containerPageControl.topAnchor, right: self.view.rightAnchor)
@@ -123,6 +123,15 @@ extension OnboardingController {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let index = self.getCurrentIndex()
         self.pageControlSetCurrentPage(at: index)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.x < 0 ||
+                scrollView.contentOffset.x > self.collectionView.frame.size.width) {
+            scrollView.panGestureRecognizer.isEnabled = false
+        } else {
+            scrollView.panGestureRecognizer.isEnabled = true
+        }
     }
 }
 

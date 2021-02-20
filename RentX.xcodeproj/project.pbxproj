@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */; };
 		1E0678D625DE20BF00CB6605 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0678D525DE20BF00CB6605 /* Onboarding.swift */; };
+		1E0C2BF525E07E900019DDA4 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2BF425E07E900019DDA4 /* SignupController.swift */; };
+		1E0C2BF925E0AAA30019DDA4 /* SignupUserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2BF825E0AAA30019DDA4 /* SignupUserDataCell.swift */; };
+		1E0C2BFD25E0CA940019DDA4 /* SignupUserPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2BFC25E0CA940019DDA4 /* SignupUserPasswordCell.swift */; };
 		1E0E700125DAE76C00F2A376 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700025DAE76C00F2A376 /* Inter-Medium.ttf */; };
 		1E0E700425DAE77C00F2A376 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */; };
 		1E0E700B25DAE8B800F2A376 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E700A25DAE8B800F2A376 /* UIFont+Ext.swift */; };
@@ -36,8 +39,7 @@
 		1EC1788525D24A3900AD794E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788425D24A3900AD794E /* Assets.xcassets */; };
 		1EC1788825D24A3900AD794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */; };
 		1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C17D25DB38FC004AC604 /* Checkbox.swift */; };
-		1ED3C18225DB709A004AC604 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18125DB709A004AC604 /* RegistrationController.swift */; };
-		1ED3C18525DB70C7004AC604 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18425DB70C7004AC604 /* RegistrationCoordinator.swift */; };
+		1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */; };
 		70754579938A838ED17E843D /* Pods_RentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,9 @@
 		14789F65A3AA63FCE3E1777C /* Pods-RentX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.release.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.release.xcconfig"; sourceTree = "<group>"; };
 		1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		1E0678D525DE20BF00CB6605 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		1E0C2BF425E07E900019DDA4 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		1E0C2BF825E0AAA30019DDA4 /* SignupUserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserDataCell.swift; sourceTree = "<group>"; };
+		1E0C2BFC25E0CA940019DDA4 /* SignupUserPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserPasswordCell.swift; sourceTree = "<group>"; };
 		1E0E700025DAE76C00F2A376 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBold.ttf"; sourceTree = "<group>"; };
 		1E0E700A25DAE8B800F2A376 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
@@ -74,8 +79,7 @@
 		1EC1788725D24A3900AD794E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RentX/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		1ED3C17D25DB38FC004AC604 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
-		1ED3C18125DB709A004AC604 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
-		1ED3C18425DB70C7004AC604 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
 		75ECB316FCB4A8B3AC851325 /* Pods-RentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.debug.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.debug.xcconfig"; sourceTree = "<group>"; };
 		E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				1E80008125DAD3D5002E5C62 /* LoginController.swift */,
-				1ED3C18125DB709A004AC604 /* RegistrationController.swift */,
+				1E0C2BF425E07E900019DDA4 /* SignupController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				1ED3C17D25DB38FC004AC604 /* Checkbox.swift */,
+				1E0C2BF825E0AAA30019DDA4 /* SignupUserDataCell.swift */,
+				1E0C2BFC25E0CA940019DDA4 /* SignupUserPasswordCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				1E80007E25DAD30D002E5C62 /* LoginCoordinator.swift */,
-				1ED3C18425DB70C7004AC604 /* RegistrationCoordinator.swift */,
+				1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */,
 				1E80007925DACFC0002E5C62 /* AppCoordinator.swift in Sources */,
 				1E80008225DAD3D5002E5C62 /* LoginController.swift in Sources */,
+				1E0C2BF525E07E900019DDA4 /* SignupController.swift in Sources */,
 				1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */,
 				1E80008725DAD672002E5C62 /* Utilities.swift in Sources */,
 				1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */,
@@ -468,13 +475,14 @@
 				1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */,
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
 				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
-				1ED3C18525DB70C7004AC604 /* RegistrationCoordinator.swift in Sources */,
+				1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */,
+				1E0C2BF925E0AAA30019DDA4 /* SignupUserDataCell.swift in Sources */,
 				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
+				1E0C2BFD25E0CA940019DDA4 /* SignupUserPasswordCell.swift in Sources */,
 				1E80005425DACE7F002E5C62 /* Coordinator.swift in Sources */,
 				1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */,
 				1E95776125E01279002AFB04 /* WelcomeController.swift in Sources */,
 				1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */,
-				1ED3C18225DB709A004AC604 /* RegistrationController.swift in Sources */,
 				1E7F2FF825D2B86500ABCCAE /* UIViewController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

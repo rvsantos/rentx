@@ -17,9 +17,9 @@
 "repeatpass"                = "Repetir senha";
 
 // SignUp screen
-"signUpTitle"               = "Crie sua conta";
-"signUpDescription"         = "Faça seu cadastro de forma rápida e fácil.";
-"signUpSubTitleData"        = "01. Dados";
-"signUpSubTitlePassword"    = "02. Senha";
+"signupTitle"               = "Crie sua conta";
+"signupDescription"         = "Faça seu cadastro de forma rápida e fácil.";
+"signupSubTitleData"        = "01. Dados";
+"signupSubTitlePassword"    = "02. Senha";
 "btNext"                    = "Próximo";
 "btSignUp"                  = "Cadastrar";

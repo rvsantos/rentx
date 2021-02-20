@@ -37,11 +37,13 @@ extension WelcomeCoordinator: Coordinator {
 // MARK: - WelcomeFlowDelegate
 extension WelcomeCoordinator: WelcomeFlowDelegate {
     func showLogin() {
-        print("DEBUG: Show login")
+        let loginCoordinator = LoginCoordinator(navigationController: self.navigationController)
+        coordinate(to: loginCoordinator)
     }
     
     func showSignup() {
-        print("DEBUG: Show signup")
+        let signupCoordinator = SignupCoordinator(navigationController: self.navigationController)
+        coordinate(to: signupCoordinator)
     }
     
     func backOnboarding() {
