@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SignupFlow {
+    func coordinateToWelcome()
+}
+
 class SignupCoordinator {
     
     // MARK: - Properties
@@ -22,6 +26,14 @@ class SignupCoordinator {
 extension SignupCoordinator: Coordinator {
     func start() {
         let signupController = SignupController()
-        self.navigationController.setViewControllers([signupController], animated: true)
+        signupController.coordinator = self
+        self.navigationController.pushViewController(signupController, animated: true)
+    }
+}
+
+// MARK: - SignupFlow
+extension SignupCoordinator: SignupFlow {
+    func coordinateToWelcome() {
+        self.navigationController.popViewController(animated: true)
     }
 }

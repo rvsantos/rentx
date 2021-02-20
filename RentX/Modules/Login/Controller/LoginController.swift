@@ -10,6 +10,8 @@ import UIKit
 class LoginController: UIViewController {
     
     // MARK: - Properties
+    var coordinator: LoginFlow?
+    
     private let labelTitle: UILabel = Utilities.label(
         title: "loginTitle".localizable,
         font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
@@ -25,6 +27,14 @@ class LoginController: UIViewController {
         button.titleLabel?.font = UIFont(fontStyle: .interRegular, size: 13)
         button.setTitle("forgotPassword".localizable, for: .normal)
         button.setTitleColor(UIColor.Palette.mediumGray, for: .normal)
+        return button
+    }()
+    
+    lazy var btBack: UIButton = {
+        let button = UIButton(type: .system)
+        button.tintColor = UIColor.Palette.mediumGray
+        button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
+        button.addTarget(self, action: #selector(handleBackNavigation), for: .touchUpInside)
         return button
     }()
     
@@ -57,10 +67,13 @@ extension LoginController {
     }
     
     private func setupLabels() {
-        self.view.addSubviews(self.labelTitle, self.labelDescription)
+        self.view.addSubviews(self.btBack, self.labelTitle, self.labelDescription)
         
-        self.labelTitle.anchor(top: self.view.topAnchor, left: self.view.leftAnchor,
-                               paddingTop: 160, paddingLeft: 32, width: 169)
+        self.btBack.anchor(top: self.view.topAnchor, left: self.view.leftAnchor,
+                           paddingTop: 67, paddingLeft: 32)
+        
+        self.labelTitle.anchor(top: self.btBack.topAnchor, left: self.view.leftAnchor,
+                               paddingTop: 81, paddingLeft: 32, width: 169)
         self.labelDescription.anchor(top: self.labelTitle.bottomAnchor, left: self.view.leftAnchor,
                                      paddingTop: 24, paddingLeft: 32, width: 204)
     }
@@ -109,5 +122,9 @@ extension LoginController {
 extension LoginController {
     @objc private func handleToogleCheckbox() {
         self.cbRememberMe.toogle()
+    }
+    
+    @objc private func handleBackNavigation() {
+        self.coordinator?.coordinateToWelcome()
     }
 }

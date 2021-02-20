@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LoginFlow {
+    func coordinateToWelcome()
+}
+
 class LoginCoordinator {
     
     // MARK: - Properties
@@ -22,6 +26,14 @@ class LoginCoordinator {
 extension LoginCoordinator: Coordinator {
     func start() {
         let loginController = LoginController()
-        self.navigationController.setViewControllers([loginController], animated: true)
+        loginController.coordinator = self
+        self.navigationController.pushViewController(loginController, animated: true)
+    }
+}
+
+// MARK: - LoginFlow
+extension LoginCoordinator: LoginFlow {
+    func coordinateToWelcome() {
+        self.navigationController.popViewController(animated: true)
     }
 }

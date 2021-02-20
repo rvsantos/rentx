@@ -14,7 +14,8 @@ protocol SignupDelegate: class {
 class SignupController: UIViewController {
     
     // MARK: - Properties
-    var count = 0
+    var coordinator: SignupFlow?
+    
     private let signupTitle: UILabel = {
         let label = Utilities.label(title: "signupTitle".localizable,
                                     font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
@@ -54,8 +55,9 @@ class SignupController: UIViewController {
     
     lazy var btBack: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
         button.tintColor = UIColor.Palette.mediumGray
+        button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
+        button.addTarget(self, action: #selector(handleBackNavigation), for: .touchUpInside)
         return button
     }()
     
@@ -155,3 +157,11 @@ extension SignupController: SignupDelegate {
         self.pageControlSetCurrentPage(at: newRow)
     }
 }
+
+// MARK: Selectors
+extension SignupController {
+    @objc private func handleBackNavigation() {
+        self.coordinator?.coordinateToWelcome()
+    }
+}
+
