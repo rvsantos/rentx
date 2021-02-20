@@ -40,6 +40,7 @@
 		1EC1788825D24A3900AD794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */; };
 		1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C17D25DB38FC004AC604 /* Checkbox.swift */; };
 		1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */; };
+		1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E025E148D600D11B39 /* OnboardingVM.swift */; };
 		70754579938A838ED17E843D /* Pods_RentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RentX/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		1ED3C17D25DB38FC004AC604 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		1EE532E025E148D600D11B39 /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
 		75ECB316FCB4A8B3AC851325 /* Pods-RentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.debug.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.debug.xcconfig"; sourceTree = "<group>"; };
 		E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 		1E0678CE25DE1F3500CB6605 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				1EE532DF25E148C300D11B39 /* ViewModel */,
 				1E0FF24025DF778200F0AA63 /* View */,
 				1E0678D425DE20B000CB6605 /* Model */,
 				1E0678CF25DE1F7800CB6605 /* Controller */,
@@ -305,11 +308,11 @@
 			children = (
 				1E80005125DACC8E002E5C62 /* Services */,
 				1E80004F25DACC65002E5C62 /* Utils */,
+				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
 				1E80007B25DAD2CC002E5C62 /* Modules */,
 				1E80005025DACC73002E5C62 /* Coordinator */,
 				1E80004A25DACC3F002E5C62 /* App */,
 				1E80004825DACB89002E5C62 /* Support Files */,
-				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
 			);
 			path = RentX;
 			sourceTree = "<group>";
@@ -321,6 +324,14 @@
 				1E2D4AEF25E019F100660250 /* Controller */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		1EE532DF25E148C300D11B39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EE532E025E148D600D11B39 /* OnboardingVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C1847E5359D0704C86C1755F /* Pods */ = {
@@ -476,6 +487,7 @@
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
 				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
 				1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */,
+				1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */,
 				1E0C2BF925E0AAA30019DDA4 /* SignupUserDataCell.swift in Sources */,
 				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
 				1E0C2BFD25E0CA940019DDA4 /* SignupUserPasswordCell.swift in Sources */,

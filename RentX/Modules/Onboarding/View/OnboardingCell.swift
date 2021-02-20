@@ -39,10 +39,10 @@ class OnboardingCell: UICollectionViewCell {
 
 // MARK: - Methods
 extension OnboardingCell {
-    func setup(_ content: Onboarding) {
-        self.labelTitle.text        = content.title
-        self.labelDescription.text  = content.description
-        self.icon.image             = UIImage(named: content.icon)
+    func setup(_ page: Onboarding) {
+        self.labelTitle.text        = page.title
+        self.labelDescription.text  = page.description
+        self.icon.image             = UIImage(named: page.icon)
     }
     
     private func setupUI() {

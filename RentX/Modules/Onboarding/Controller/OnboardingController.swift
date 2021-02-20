@@ -10,14 +10,8 @@ import UIKit
 class OnboardingController: UIViewController {
     
     // MARK: - Properties
-    private let content: [Onboarding] = [
-        .init(title: "Primeiro, escolha a data",
-              description: "Você e quem define um período, e nós mostraremos os carros disponiveis.",
-              icon: "appointment-icon"),
-        .init(title: "Depois, escolha o carro",
-              description: "Vários modelos para você dirigir seguro, com conforto e segurança.",
-              icon: "car-icon")]
     
+    private var onboardingVM: OnboardingVM!
     weak var coordinator: AppFlowDelegate?
     
     private let containerPageControl: UIView = {
@@ -72,6 +66,16 @@ extension OnboardingController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        
+        let content: [Onboarding] = [
+            .init(title: "Primeiro, escolha a data",
+                  description: "Você e quem define um período, e nós mostraremos os carros disponiveis.",
+                  icon: "appointment-icon"),
+            .init(title: "Depois, escolha o carro",
+                  description: "Vários modelos para você dirigir seguro, com conforto e segurança.",
+                  icon: "car-icon")]
+        
+        self.onboardingVM = OnboardingVM(pages: content)
     }
 }
 
@@ -140,7 +144,7 @@ extension OnboardingController {
     @objc private func goToNext() {
         let newRow = self.getCurrentIndex() + 1
         
-        if newRow >= self.content.count {
+        if newRow >= self.onboardingVM.numberOfRows {
             self.coordinator?.showWelcome()
         } else {
             let nextIndexPath = IndexPath(row: newRow, section: 0)
@@ -156,14 +160,14 @@ extension OnboardingController: UICollectionViewDelegate {}
 // MARK: - UICollectionViewDataSource
 extension OnboardingController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.content.count
+        return self.onboardingVM.numberOfRows
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnboardingCell.reuseID,
                                                       for: indexPath) as? OnboardingCell
-        cell?.setup(self.content[indexPath.row])
+        cell?.setup(self.onboardingVM.onboardingAt(indexPath.row))
         return cell ?? UICollectionViewCell()
     }
 }

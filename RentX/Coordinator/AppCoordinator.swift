@@ -27,8 +27,8 @@ class AppCoordinator {
 // MARK: - Coordinator Protocol
 extension AppCoordinator: Coordinator {
     func start() {
-        self.showWelcomeScreen()
-//        self.showOnboardingScreen()
+//        self.showWelcomeScreen()
+        self.showOnboardingScreen()
     }
 }
 
