@@ -11,7 +11,7 @@ class OnboardingController: UIViewController {
     
     // MARK: - Properties
     
-    private var onboardingVM: OnboardingVM!
+    private var onboardingVM: OnboardingVM = OnboardingVM()
     weak var coordinator: AppFlowDelegate?
     
     private let containerPageControl: UIView = {
@@ -66,16 +66,6 @@ extension OnboardingController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-        
-        let content: [Onboarding] = [
-            .init(title: "Primeiro, escolha a data",
-                  description: "Você e quem define um período, e nós mostraremos os carros disponiveis.",
-                  icon: "appointment-icon"),
-            .init(title: "Depois, escolha o carro",
-                  description: "Vários modelos para você dirigir seguro, com conforto e segurança.",
-                  icon: "car-icon")]
-        
-        self.onboardingVM = OnboardingVM(pages: content)
     }
 }
 
