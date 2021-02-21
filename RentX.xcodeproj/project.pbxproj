@@ -10,8 +10,6 @@
 		1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */; };
 		1E0678D625DE20BF00CB6605 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0678D525DE20BF00CB6605 /* Onboarding.swift */; };
 		1E0C2BF525E07E900019DDA4 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2BF425E07E900019DDA4 /* SignupController.swift */; };
-		1E0C2BF925E0AAA30019DDA4 /* SignupUserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2BF825E0AAA30019DDA4 /* SignupUserDataCell.swift */; };
-		1E0C2BFD25E0CA940019DDA4 /* SignupUserPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C2BFC25E0CA940019DDA4 /* SignupUserPasswordCell.swift */; };
 		1E0E700125DAE76C00F2A376 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700025DAE76C00F2A376 /* Inter-Medium.ttf */; };
 		1E0E700425DAE77C00F2A376 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */; };
 		1E0E700B25DAE8B800F2A376 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E700A25DAE8B800F2A376 /* UIFont+Ext.swift */; };
@@ -19,6 +17,10 @@
 		1E0E701125DAED5100F2A376 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E701025DAED5100F2A376 /* UITextField+Ext.swift */; };
 		1E0FF24225DF778F00F0AA63 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */; };
 		1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */; };
+		1E74F79725E1E5F6004926C3 /* BindingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */; };
+		1E74F79B25E1E6EB004926C3 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79A25E1E6EB004926C3 /* Dynamic.swift */; };
+		1E74F79E25E1E7B9004926C3 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79D25E1E7B9004926C3 /* Signup.swift */; };
+		1E74F7A125E1EF90004926C3 /* SignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F7A025E1EF90004926C3 /* SignupVM.swift */; };
 		1E7F2FEE25D2B7C800ABCCAE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */; };
 		1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */; };
 		1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */; };
@@ -41,6 +43,7 @@
 		1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C17D25DB38FC004AC604 /* Checkbox.swift */; };
 		1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */; };
 		1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E025E148D600D11B39 /* OnboardingVM.swift */; };
+		1EE532E625E1B31F00D11B39 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */; };
 		70754579938A838ED17E843D /* Pods_RentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +52,6 @@
 		1E0678D025DE1F8C00CB6605 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		1E0678D525DE20BF00CB6605 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		1E0C2BF425E07E900019DDA4 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
-		1E0C2BF825E0AAA30019DDA4 /* SignupUserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserDataCell.swift; sourceTree = "<group>"; };
-		1E0C2BFC25E0CA940019DDA4 /* SignupUserPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserPasswordCell.swift; sourceTree = "<group>"; };
 		1E0E700025DAE76C00F2A376 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1E0E700325DAE77C00F2A376 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBold.ttf"; sourceTree = "<group>"; };
 		1E0E700A25DAE8B800F2A376 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
@@ -58,6 +59,10 @@
 		1E0E701025DAED5100F2A376 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextfield.swift; sourceTree = "<group>"; };
+		1E74F79A25E1E6EB004926C3 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		1E74F79D25E1E7B9004926C3 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		1E74F7A025E1EF90004926C3 /* SignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVM.swift; sourceTree = "<group>"; };
 		1E7F2FED25D2B7C800ABCCAE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		1E7F2FF125D2B81A00ABCCAE /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		1E7F2FF425D2B83A00ABCCAE /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		1ED3C17D25DB38FC004AC604 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
 		1EE532E025E148D600D11B39 /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
+		1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		75ECB316FCB4A8B3AC851325 /* Pods-RentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.debug.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.debug.xcconfig"; sourceTree = "<group>"; };
 		E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +165,15 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		1E74F79525E1E5D6004926C3 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */,
+				1E74F79A25E1E6EB004926C3 /* Dynamic.swift */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
 		1E7F2FEC25D2B7A800ABCCAE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				1E80008125DAD3D5002E5C62 /* LoginController.swift */,
-				1E0C2BF425E07E900019DDA4 /* SignupController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,8 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				1ED3C17D25DB38FC004AC604 /* Checkbox.swift */,
-				1E0C2BF825E0AAA30019DDA4 /* SignupUserDataCell.swift */,
-				1E0C2BFC25E0CA940019DDA4 /* SignupUserPasswordCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +237,7 @@
 		1E80004E25DACC5E002E5C62 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1E74F7A025E1EF90004926C3 /* SignupVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -260,6 +273,7 @@
 				1E0678CE25DE1F3500CB6605 /* Onboarding */,
 				1ED3C18025DB6C8C004AC604 /* Welcome */,
 				1E80007C25DAD2E2002E5C62 /* Login */,
+				1EB0E11625E2CC31004ECC77 /* Signup */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -269,7 +283,6 @@
 			children = (
 				1E80004B25DACC4C002E5C62 /* Controller */,
 				1E80007D25DAD300002E5C62 /* Coordinator */,
-				1E80004E25DACC5E002E5C62 /* ViewModel */,
 				1E80004D25DACC58002E5C62 /* View */,
 				1E80004C25DACC52002E5C62 /* Model */,
 			);
@@ -280,9 +293,51 @@
 			isa = PBXGroup;
 			children = (
 				1E80007E25DAD30D002E5C62 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1EB0E11625E2CC31004ECC77 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1EB0E11925E2CC67004ECC77 /* Model */,
+				1EB0E11A25E2CC75004ECC77 /* View */,
+				1E80004E25DACC5E002E5C62 /* ViewModel */,
+				1EB0E11725E2CC42004ECC77 /* Controller */,
+				1EB0E11825E2CC4C004ECC77 /* Coordinator */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		1EB0E11725E2CC42004ECC77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E0C2BF425E07E900019DDA4 /* SignupController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1EB0E11825E2CC4C004ECC77 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
 				1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1EB0E11925E2CC67004ECC77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E74F79D25E1E7B9004926C3 /* Signup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EB0E11A25E2CC75004ECC77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1EC1786F25D24A3800AD794E = {
@@ -306,6 +361,8 @@
 		1EC1787A25D24A3800AD794E /* RentX */ = {
 			isa = PBXGroup;
 			children = (
+				1E74F79525E1E5D6004926C3 /* Custom Controls */,
+				1EE532E425E1B2D400D11B39 /* DataSource */,
 				1E80005125DACC8E002E5C62 /* Services */,
 				1E80004F25DACC65002E5C62 /* Utils */,
 				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
@@ -332,6 +389,14 @@
 				1EE532E025E148D600D11B39 /* OnboardingVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EE532E425E1B2D400D11B39 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		C1847E5359D0704C86C1755F /* Pods */ = {
@@ -474,26 +539,29 @@
 				1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */,
 				1E80007F25DAD30D002E5C62 /* LoginCoordinator.swift in Sources */,
 				1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */,
+				1E74F7A125E1EF90004926C3 /* SignupVM.swift in Sources */,
 				1E80007925DACFC0002E5C62 /* AppCoordinator.swift in Sources */,
 				1E80008225DAD3D5002E5C62 /* LoginController.swift in Sources */,
 				1E0C2BF525E07E900019DDA4 /* SignupController.swift in Sources */,
 				1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */,
+				1E74F79B25E1E6EB004926C3 /* Dynamic.swift in Sources */,
 				1E80008725DAD672002E5C62 /* Utilities.swift in Sources */,
 				1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */,
 				1E0678D625DE20BF00CB6605 /* Onboarding.swift in Sources */,
 				1E0E700B25DAE8B800F2A376 /* UIFont+Ext.swift in Sources */,
 				1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */,
+				1E74F79725E1E5F6004926C3 /* BindingTextfield.swift in Sources */,
 				1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */,
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
 				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
 				1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */,
 				1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */,
-				1E0C2BF925E0AAA30019DDA4 /* SignupUserDataCell.swift in Sources */,
+				1EE532E625E1B31F00D11B39 /* CollectionViewDataSource.swift in Sources */,
 				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
-				1E0C2BFD25E0CA940019DDA4 /* SignupUserPasswordCell.swift in Sources */,
 				1E80005425DACE7F002E5C62 /* Coordinator.swift in Sources */,
 				1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */,
 				1E95776125E01279002AFB04 /* WelcomeController.swift in Sources */,
+				1E74F79E25E1E7B9004926C3 /* Signup.swift in Sources */,
 				1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */,
 				1E7F2FF825D2B86500ABCCAE /* UIViewController+Ext.swift in Sources */,
 			);
