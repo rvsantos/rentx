@@ -19,4 +19,16 @@ extension UIButton {
         
         setAttributedTitle(attributedTitle, for: .normal)
     }
+    
+    static func button(title: String) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont(fontStyle: .interMedium, size: 15)
+        button.backgroundColor = UIColor.Palette.red
+        button.layer.cornerRadius = 5
+        button.clipsToBounds = true
+        button.heightAnchor.constraint(equalToConstant: 56).isActive = true
+        return button
+    }
 }

@@ -17,44 +17,38 @@ class SignupController: UIViewController {
     var coordinator: SignupFlow?
     private let signupVM = SignupVM()
     
-    private let signupTitle: UILabel = {
-        let label = Utilities.label(title: "signupTitle".localizable,
-                                    font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
-                                    color: UIColor.Palette.darkGray)
-        return label
-    }()
+    private let signupTitle: UILabel = .label(title: "signupTitle".localizable,
+                                              font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
+                                              color: UIColor.Palette.darkGray)
     
-    private let signupDescription: UILabel = {
-        let label = Utilities.label(title: "signupDescription".localizable,
-                                    font: UIFont(fontStyle: .interRegular, size: 15)!,
-                                    color: UIColor.Palette.mediumGray)
-        return label
-    }()
+    private let signupDescription: UILabel = .label(title: "signupDescription".localizable,
+                                                    font: UIFont(fontStyle: .interRegular, size: 15)!,
+                                                    color: UIColor.Palette.mediumGray)
+    
+    private let cellTitle: UILabel = .label(title: "1. Dados",
+                                   font: UIFont(fontStyle: .archivoSemiBold, size: 20)!,
+                                   color: UIColor.Palette.darkGray)
     
     lazy var btBack: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = UIColor.Palette.mediumGray
         button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
-        button.addTarget(self, action: #selector(handleBackNavigation), for: .touchUpInside)
+        button.addTarget(self, action: #selector(backClick), for: .touchUpInside)
         return button
     }()
     
-    private let cellTitle = Utilities.label(title: "1. Dados",
-                                            font: UIFont(fontStyle: .archivoSemiBold, size: 20)!,
-                                            color: UIColor.Palette.darkGray)
-    
-    private let tfName = Utilities.textField(placeholder: "Nome")
+    private let tfName: UITextField = .textField(placeholder: "Nome")
     lazy var nameContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "profile-icon"), textfield: self.tfName)
     
-    private let tfEmail = Utilities.textField(placeholder: "E-mail")
+    private let tfEmail: UITextField = .textField(placeholder: "E-mail")
     lazy var emailContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "email-icon"), textfield: self.tfEmail)
     
-    private let tfSenha = Utilities.textField(placeholder: "Senha", isSecure: true)
+    private let tfSenha: UITextField = .textField(placeholder: "Senha", isSecure: true)
     lazy var passwordContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "password-icon"), textfield: self.tfSenha)
     
-    private let tfRepeatSenha = Utilities.textField(placeholder: "Repetir senha", isSecure: true)
+    private let tfRepeatSenha: UITextField = .textField(placeholder: "Repetir senha", isSecure: true)
     lazy var repeatPasswordContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "password-icon"),
-                                                                textfield: self.tfRepeatSenha)
+                                                                    textfield: self.tfRepeatSenha)
     
     private let viewSpace: UIView = {
         let view = UIView()
@@ -64,7 +58,7 @@ class SignupController: UIViewController {
     }()
     
     lazy var btSignup: UIButton = {
-        let button = Utilities.button(title: "Cadastrar")
+        let button: UIButton = .button(title: "Cadastrar")
         button.addTarget(self, action: #selector(handleSignup), for: .touchUpInside)
         return button
     }()
@@ -111,21 +105,11 @@ extension SignupController {
 
 // MARK: Selectors
 extension SignupController {
-    @objc private func handleBackNavigation() {
+    @objc private func backClick() {
         self.coordinator?.coordinateToWelcome()
     }
     
     @objc private func handleSignup() {
         
-    }
-}
-
-// MARK: - Selectors
-
-extension SignupController: CollectionCellTextFieldDelegate {
-    func cellTextFields(_ fields: [UITextField]) {
-        fields.forEach {
-            print($0.text ?? "Empty Field")
-        }
     }
 }

@@ -12,12 +12,12 @@ class LoginController: UIViewController {
     // MARK: - Properties
     var coordinator: LoginFlow?
     
-    private let labelTitle: UILabel = Utilities.label(
+    private let labelTitle: UILabel = .label(
         title: "loginTitle".localizable,
         font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
         color: UIColor.Palette.darkGray)
     
-    private let labelDescription: UILabel = Utilities.label(
+    private let labelDescription: UILabel = .label(
         title: "loginDescription".localizable,
         font: UIFont(fontStyle: .interRegular, size: 15)!,
         color: UIColor.Palette.mediumGray)
@@ -34,19 +34,19 @@ class LoginController: UIViewController {
         let button = UIButton(type: .system)
         button.tintColor = UIColor.Palette.mediumGray
         button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
-        button.addTarget(self, action: #selector(handleBackNavigation), for: .touchUpInside)
+        button.addTarget(self, action: #selector(backClick), for: .touchUpInside)
         return button
     }()
     
-    private let lbCheckbox: UILabel = Utilities.label(
+    private let lbCheckbox: UILabel = .label(
         title: "rememberMe".localizable,
         font: UIFont(fontStyle: .interRegular, size: 13)!,
         color: UIColor.Palette.mediumGray)
     
-    private let tfEmail: UITextField = Utilities.textField(placeholder: "email".localizable)
-    private let tfPassword: UITextField = Utilities.textField(
+    private let tfEmail: UITextField = .textField(placeholder: "email".localizable)
+    private let tfPassword: UITextField = .textField(
         placeholder: "password".localizable, isSecure: true)
-    private let btLogin: UIButton = Utilities.button(title: "Login")
+    private let btLogin: UIButton = .button(title: "Login")
     private let cbRememberMe: Checkbox = Checkbox()
     
     // MARK: Lifecycle
@@ -81,12 +81,12 @@ extension LoginController {
     private func setupTextField() {
         let containerEmail = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "email-icon"), textfield: self.tfEmail)
         let containerPassword = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "password-icon"), textfield: self.tfPassword)
-
+        
         let stack           = UIStackView(arrangedSubviews: [containerEmail, containerPassword])
         stack.axis          = .vertical
         stack.distribution  = .fillEqually
         stack.spacing       = 8
-
+        
         self.view.addSubviews(stack)
         stack.anchor(top: self.labelDescription.bottomAnchor,left: self.view.leftAnchor,
                      right: self.view.rightAnchor, paddingTop: 110, paddingLeft: 24, paddingRight: 24)
@@ -124,7 +124,7 @@ extension LoginController {
         self.cbRememberMe.toogle()
     }
     
-    @objc private func handleBackNavigation() {
+    @objc private func backClick() {
         self.coordinator?.coordinateToWelcome()
     }
 }
