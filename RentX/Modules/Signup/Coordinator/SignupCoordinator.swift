@@ -27,6 +27,7 @@ extension SignupCoordinator: Coordinator {
     func start() {
         let signupController = SignupController()
         signupController.coordinator = self
+        signupController.signupVM = SignupVM()
         self.navigationController.pushViewController(signupController, animated: true)
     }
 }

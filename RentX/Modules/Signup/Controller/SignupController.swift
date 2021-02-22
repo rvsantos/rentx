@@ -15,7 +15,10 @@ class SignupController: UIViewController {
     
     // MARK: - Properties
     var coordinator: SignupFlow?
-    private let signupVM = SignupVM()
+    var signupVM: SignupVM!
+    
+    private let validityTypeEmail: String.ValidityType = .email
+    private let validityTypePassword: String.ValidityType = .password
     
     private let signupTitle: UILabel = .label(title: "signupTitle".localizable,
                                               font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
@@ -26,8 +29,8 @@ class SignupController: UIViewController {
                                                     color: UIColor.Palette.mediumGray)
     
     private let cellTitle: UILabel = .label(title: "1. Dados",
-                                   font: UIFont(fontStyle: .archivoSemiBold, size: 20)!,
-                                   color: UIColor.Palette.darkGray)
+                                            font: UIFont(fontStyle: .archivoSemiBold, size: 20)!,
+                                            color: UIColor.Palette.darkGray)
     
     lazy var btBack: UIButton = {
         let button = UIButton(type: .system)
@@ -40,15 +43,15 @@ class SignupController: UIViewController {
     private let tfName: UITextField = .textField(placeholder: "Nome")
     lazy var nameContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "profile-icon"), textfield: self.tfName)
     
-    private let tfEmail: UITextField = .textField(placeholder: "E-mail")
+    lazy var tfEmail: UITextField =  .textField(placeholder: "E-mail")
     lazy var emailContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "email-icon"), textfield: self.tfEmail)
     
-    private let tfSenha: UITextField = .textField(placeholder: "Senha", isSecure: true)
-    lazy var passwordContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "password-icon"), textfield: self.tfSenha)
+    private let tfPassword: UITextField = .textField(placeholder: "Senha", isSecure: true)
+    lazy var passwordContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "password-icon"), textfield: self.tfPassword)
     
-    private let tfRepeatSenha: UITextField = .textField(placeholder: "Repetir senha", isSecure: true)
+    private let tfRepeatPassword: UITextField = .textField(placeholder: "Repetir senha", isSecure: true)
     lazy var repeatPasswordContainer = Utilities.inputContainerView(withImage: #imageLiteral(resourceName: "password-icon"),
-                                                                    textfield: self.tfRepeatSenha)
+                                                                    textfield: self.tfRepeatPassword)
     
     private let viewSpace: UIView = {
         let view = UIView()
@@ -59,7 +62,7 @@ class SignupController: UIViewController {
     
     lazy var btSignup: UIButton = {
         let button: UIButton = .button(title: "Cadastrar")
-        button.addTarget(self, action: #selector(handleSignup), for: .touchUpInside)
+        button.addTarget(self, action: #selector(signupClick), for: .touchUpInside)
         return button
     }()
     
@@ -101,6 +104,22 @@ extension SignupController {
                      right: self.view.rightAnchor, paddingTop: 110, paddingLeft: 24,
                      paddingRight: 24)
     }
+    
+    private func checkIfEmailPasswordIsValid(_ email: String, _ password: String) -> Bool {
+        var isValid = true
+        
+        if !email.isValid(self.validityTypeEmail) {
+            self.showAlert(withTitle: "Email invalido",
+                           message: "O email digitado é invalido")
+            isValid = false
+        } else if !password.isValid(self.validityTypePassword) {
+            self.showAlert(withTitle: "Senha invalida",
+                           message: "Senha invalida, tente outra senha.")
+            isValid = false
+        }
+        
+        return isValid
+    }
 }
 
 // MARK: Selectors
@@ -109,7 +128,24 @@ extension SignupController {
         self.coordinator?.coordinateToWelcome()
     }
     
-    @objc private func handleSignup() {
-        
+    @objc private func signupClick() {
+        if UITextField.validateAll(textFields: [self.tfName, self.tfEmail,
+                                                self.tfPassword, self.tfRepeatPassword]) {
+            guard let email = self.tfEmail.text else { return }
+            guard let name = self.tfName.text else { return }
+            guard let password = self.tfPassword.text else { return }
+            guard let repeatPassword = self.tfRepeatPassword.text else { return }
+            
+            if self.checkIfEmailPasswordIsValid(email, password) {
+                if self.signupVM.checkIfEmailIsEqual(password, repeatPassword) {
+                    let user = User(name: name, email: email, password: password)
+                    print("DEBUG: Cadastro realizado com sucesso! \(user)")
+                } else {
+                    self.showAlert(withTitle: "Email invalido", message: "Os email devem ser iguais.")
+                }
+            }
+        } else {
+            self.showAlert(withTitle: "Erro ao cadastrar", message: "Todos os campos devem ser preenchidos.")
+        }
     }
 }

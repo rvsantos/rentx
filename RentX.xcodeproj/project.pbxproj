@@ -17,6 +17,7 @@
 		1E0E701125DAED5100F2A376 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E701025DAED5100F2A376 /* UITextField+Ext.swift */; };
 		1E0FF24225DF778F00F0AA63 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */; };
 		1E1CB8D025E2FD9700785F6F /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CB8CF25E2FD9700785F6F /* UILabel+Ext.swift */; };
+		1E1CB8D425E3682800785F6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CB8D325E3682800785F6F /* User.swift */; };
 		1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */; };
 		1E74F79725E1E5F6004926C3 /* BindingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */; };
 		1E74F79B25E1E6EB004926C3 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79A25E1E6EB004926C3 /* Dynamic.swift */; };
@@ -60,6 +61,7 @@
 		1E0E701025DAED5100F2A376 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		1E1CB8CF25E2FD9700785F6F /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		1E1CB8D325E3682800785F6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
 		1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextfield.swift; sourceTree = "<group>"; };
 		1E74F79A25E1E6EB004926C3 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 				1E0FF24125DF778F00F0AA63 /* OnboardingCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1E1CB8D225E3680D00785F6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E1CB8D325E3682800785F6F /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1E2D4AEF25E019F100660250 /* Controller */ = {
@@ -369,6 +379,7 @@
 				1E80005125DACC8E002E5C62 /* Services */,
 				1E80004F25DACC65002E5C62 /* Utils */,
 				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
+				1E1CB8D225E3680D00785F6F /* Model */,
 				1E80007B25DAD2CC002E5C62 /* Modules */,
 				1E80005025DACC73002E5C62 /* Coordinator */,
 				1E80004A25DACC3F002E5C62 /* App */,
@@ -568,6 +579,7 @@
 				1E74F79E25E1E7B9004926C3 /* Signup.swift in Sources */,
 				1EC1787E25D24A3800AD794E /* SceneDelegate.swift in Sources */,
 				1E7F2FF825D2B86500ABCCAE /* UIViewController+Ext.swift in Sources */,
+				1E1CB8D425E3682800785F6F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

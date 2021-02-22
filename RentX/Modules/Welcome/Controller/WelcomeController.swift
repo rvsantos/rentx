@@ -13,7 +13,7 @@ class WelcomeController: UIViewController {
     var coordinator: WelcomeFlowDelegate?
     
     private let labelTitle: UILabel = {
-        let label = Utilities.label(title: "Seja  Bem-vindo",
+        let label: UILabel = .label(title: "Seja  Bem-vindo",
                                     font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
                                     color: .white)
         label.textAlignment = .center
@@ -22,7 +22,7 @@ class WelcomeController: UIViewController {
         return label
     }()
     
-    private let labelDescription = Utilities.label(title: "O que você deseja fazer?",
+    private let labelDescription: UILabel = .label(title: "O que você deseja fazer?",
                                                    font: UIFont(fontStyle: .interRegular, size: 15)!,
                                                    color: .white)
     
@@ -33,13 +33,13 @@ class WelcomeController: UIViewController {
     }()
     
     lazy var btLogin: UIButton = {
-        let button  = Utilities.button(title: "Login")
+        let button: UIButton  = .button(title: "Login")
         button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
         return button
     }()
     
     lazy var btSignUp: UIButton = {
-        let button = Utilities.button(title: "Cadastro")
+        let button: UIButton = .button(title: "Cadastro")
         button.backgroundColor = UIColor.Palette.black
         button.addTarget(self, action: #selector(goToSignUp), for: .touchUpInside)
         return button

@@ -98,4 +98,18 @@ extension UIView {
     func addSubviews(_ views: UIView...) {
         for view in views { addSubview(view) }
     }
+    
+    func viewOfType<T: UIView>(type: T.Type, process: (_ view: T) -> Void)
+    {
+        if let view = self as? T
+        {
+            process(view)
+        }
+        else {
+            for subView in subviews
+            {
+                subView.viewOfType(type: type, process: process)
+            }
+        }
+    }
 }

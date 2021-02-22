@@ -164,4 +164,3 @@ extension SignupController {
         self.coordinator?.coordinateToWelcome()
     }
 }
-

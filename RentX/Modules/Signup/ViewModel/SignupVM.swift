@@ -12,4 +12,8 @@ struct SignupVM {
     var email: String?
     var password: String?
     var repeatPassword: String?
+    
+    func checkIfEmailIsEqual(_ lhside: String, _ rhside: String) -> Bool {
+        return lhside == rhside
+    }
 }

@@ -12,11 +12,11 @@ class OnboardingCell: UICollectionViewCell {
     // MARK: - Properties
     static let reuseID = String(describing: OnboardingCell.self)
     
-    private let labelTitle = Utilities.label(title: "Titulo",
+    private let labelTitle: UILabel = .label(title: "Titulo",
                                              font: UIFont(fontStyle: .archivoSemiBold, size: 40)!,
                                              color: UIColor.Palette.darkGray)
     
-    private let labelDescription = Utilities.label(title: "Description",
+    private let labelDescription: UILabel = .label(title: "Description",
                                                    font: UIFont(fontStyle: .interRegular, size: 15)!,
                                                    color: UIColor.Palette.mediumGray)
     
