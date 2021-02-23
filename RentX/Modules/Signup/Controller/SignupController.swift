@@ -28,10 +28,6 @@ class SignupController: UIViewController {
                                                     font: UIFont(fontStyle: .interRegular, size: 15)!,
                                                     color: UIColor.Palette.mediumGray)
     
-    private let cellTitle: UILabel = .label(title: "1. Dados",
-                                            font: UIFont(fontStyle: .archivoSemiBold, size: 20)!,
-                                            color: UIColor.Palette.darkGray)
-    
     lazy var btBack: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = UIColor.Palette.mediumGray
@@ -139,9 +135,20 @@ extension SignupController {
             if self.checkIfEmailPasswordIsValid(email, password) {
                 if self.signupVM.checkIfEmailIsEqual(password, repeatPassword) {
                     let user = User(name: name, email: email, password: password)
+                    AuthService.registerUser(user: user) { [weak self] (error) in
+                        if let error = error {
+                            print("DEBUG: Error logging in \(error.localizedDescription)")
+                            return
+                        }
+                        
+                        let content = Confirmation(title: "Conta criada!",
+                                                   description: "Agora é só fazer o login e aproveitar.",
+                                                   buttonTitle: "Ok")
+                        self?.coordinator?.coordinateToSuccess(content)
+                    }
                     print("DEBUG: Cadastro realizado com sucesso! \(user)")
                 } else {
-                    self.showAlert(withTitle: "Email invalido", message: "Os email devem ser iguais.")
+                    self.showAlert(withTitle: "Senha invalido", message: "As senhas devem ser iguais.")
                 }
             }
         } else {

@@ -11,6 +11,8 @@ class LoginController: UIViewController {
     
     // MARK: - Properties
     var coordinator: LoginFlow?
+    private let validityEmailType: String.ValidityType = .email
+    private let validityPasswordType: String.ValidityType = .password
     
     private let labelTitle: UILabel = .label(
         title: "loginTitle".localizable,
@@ -46,7 +48,11 @@ class LoginController: UIViewController {
     private let tfEmail: UITextField = .textField(placeholder: "email".localizable)
     private let tfPassword: UITextField = .textField(
         placeholder: "password".localizable, isSecure: true)
-    private let btLogin: UIButton = .button(title: "Login")
+    private let btLogin: UIButton = {
+        let button: UIButton = .button(title: "Login")
+        button.addTarget(self, action: #selector(loginClick), for: .touchUpInside)
+        return button
+    }()
     private let cbRememberMe: Checkbox = Checkbox()
     
     // MARK: Lifecycle
@@ -116,6 +122,18 @@ extension LoginController {
         let tapCheckbox = UITapGestureRecognizer(target: self, action: #selector(handleToogleCheckbox))
         self.cbRememberMe.addGestureRecognizer(tapCheckbox)
     }
+    
+    private func validateEmailPassword(_ email: String, _ password: String) -> Bool {
+        var isValid = true
+        if !email.isValid(self.validityEmailType) {
+            self.showAlert(withTitle: "Email invalido", message: "Digite um email valido para prosseguir")
+            isValid = false
+        } else if !password.isValid(self.validityPasswordType) {
+            self.showAlert(withTitle: "Senha invalida", message: "Digite uma senha valida para prosseguir")
+            isValid = false
+        }
+        return isValid
+    }
 }
 
 // MARK: Selectors
@@ -126,5 +144,26 @@ extension LoginController {
     
     @objc private func backClick() {
         self.coordinator?.coordinateToWelcome()
+    }
+    
+    @objc private func loginClick() {
+        guard let email = self.tfEmail.text else { return }
+        guard let password = self.tfPassword.text else { return }
+        
+        if UITextField.validateAll(textFields: [self.tfEmail, self.tfPassword]) {
+            if self.validateEmailPassword(email, password) {
+                AuthService.logIn(withEmail: email, password: password) { [weak self] (result, error) in
+                    if let error = error {
+                        self?.showAlert(withTitle: "Erro", message: "Login/Senha incorreta. Tente novamente.")
+                        print("DEBUG: Error logging in \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    print("DEBUG: Logging in success")
+                }
+            }
+        } else {
+            self.showAlert(withTitle: "Campos vazios", message: "Todos os campos são obrigatorios")
+        }
     }
 }
