@@ -7,4 +7,7 @@ target 'RentX' do
 
   # Pods for RentX
   pod 'SwiftLint'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 end
