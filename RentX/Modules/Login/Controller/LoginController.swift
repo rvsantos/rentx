@@ -10,7 +10,6 @@ import UIKit
 class LoginController: UIViewController {
     
     // MARK: - Properties
-    var coordinator: LoginFlow?
     private let validityEmailType: String.ValidityType = .email
     private let validityPasswordType: String.ValidityType = .password
     

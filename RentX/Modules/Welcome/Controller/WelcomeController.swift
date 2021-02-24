@@ -10,7 +10,6 @@ import UIKit
 class WelcomeController: UIViewController {
     
     // MARK: - Properties
-    var coordinator: WelcomeFlowDelegate?
     
     private let labelTitle: UILabel = {
         let label: UILabel = .label(title: "Seja  Bem-vindo",

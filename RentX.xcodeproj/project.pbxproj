@@ -19,7 +19,6 @@
 		1E1CB8D025E2FD9700785F6F /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CB8CF25E2FD9700785F6F /* UILabel+Ext.swift */; };
 		1E1CB8D425E3682800785F6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CB8D325E3682800785F6F /* User.swift */; };
 		1E1CB8D825E376BD00785F6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CB8D725E376BD00785F6F /* GoogleService-Info.plist */; };
-		1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */; };
 		1E74F79725E1E5F6004926C3 /* BindingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */; };
 		1E74F79B25E1E6EB004926C3 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79A25E1E6EB004926C3 /* Dynamic.swift */; };
 		1E74F79E25E1E7B9004926C3 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E74F79D25E1E7B9004926C3 /* Signup.swift */; };
@@ -32,9 +31,6 @@
 		1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F2FFE25D2B96400ABCCAE /* UITableView+Ext.swift */; };
 		1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F300125D2B98B00ABCCAE /* String+Ext.swift */; };
 		1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7F300425D2B9A600ABCCAE /* Date+Ext.swift */; };
-		1E80005425DACE7F002E5C62 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80005325DACE7F002E5C62 /* Coordinator.swift */; };
-		1E80007925DACFC0002E5C62 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80007825DACFC0002E5C62 /* AppCoordinator.swift */; };
-		1E80007F25DAD30D002E5C62 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80007E25DAD30D002E5C62 /* LoginCoordinator.swift */; };
 		1E80008225DAD3D5002E5C62 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80008125DAD3D5002E5C62 /* LoginController.swift */; };
 		1E80008725DAD672002E5C62 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80008625DAD672002E5C62 /* Utilities.swift */; };
 		1E80008A25DADD48002E5C62 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E80008925DADD48002E5C62 /* Localizable.strings */; };
@@ -44,13 +40,11 @@
 		1EC1788525D24A3900AD794E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788425D24A3900AD794E /* Assets.xcassets */; };
 		1EC1788825D24A3900AD794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */; };
 		1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C17D25DB38FC004AC604 /* Checkbox.swift */; };
-		1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */; };
 		1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E025E148D600D11B39 /* OnboardingVM.swift */; };
 		1EE532E625E1B31F00D11B39 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */; };
 		1EF76D1D25E40E650088319B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D1C25E40E650088319B /* AuthService.swift */; };
 		1EF76D2225E427EB0088319B /* ConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D2125E427EB0088319B /* ConfirmationController.swift */; };
 		1EF76D2625E481970088319B /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D2525E481970088319B /* Confirmation.swift */; };
-		1EF76D2B25E4C2B10088319B /* ConfirmationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D2A25E4C2B10088319B /* ConfirmationCoordinator.swift */; };
 		70754579938A838ED17E843D /* Pods_RentX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +62,6 @@
 		1E1CB8CF25E2FD9700785F6F /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		1E1CB8D325E3682800785F6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1E1CB8D725E376BD00785F6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
 		1E74F79625E1E5F6004926C3 /* BindingTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextfield.swift; sourceTree = "<group>"; };
 		1E74F79A25E1E6EB004926C3 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		1E74F79D25E1E7B9004926C3 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
@@ -81,9 +74,6 @@
 		1E7F2FFE25D2B96400ABCCAE /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		1E7F300125D2B98B00ABCCAE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		1E7F300425D2B9A600ABCCAE /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
-		1E80005325DACE7F002E5C62 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		1E80007825DACFC0002E5C62 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		1E80007E25DAD30D002E5C62 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1E80008125DAD3D5002E5C62 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		1E80008625DAD672002E5C62 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1E80008925DADD48002E5C62 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -95,13 +85,11 @@
 		1EC1788725D24A3900AD794E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RentX/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		1ED3C17D25DB38FC004AC604 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
-		1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
 		1EE532E025E148D600D11B39 /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
 		1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		1EF76D1C25E40E650088319B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1EF76D2125E427EB0088319B /* ConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationController.swift; sourceTree = "<group>"; };
 		1EF76D2525E481970088319B /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
-		1EF76D2A25E4C2B10088319B /* ConfirmationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationCoordinator.swift; sourceTree = "<group>"; };
 		75ECB316FCB4A8B3AC851325 /* Pods-RentX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentX.debug.xcconfig"; path = "Target Support Files/Pods-RentX/Pods-RentX.debug.xcconfig"; sourceTree = "<group>"; };
 		E661C5BEF6C8301301BFD826 /* Pods_RentX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,14 +165,6 @@
 				1E95776025E01278002AFB04 /* WelcomeController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1E2D4AF025E019F800660250 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1E2D4AF125E01A0800660250 /* WelcomeCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		1E74F79525E1E5D6004926C3 /* Custom Controls */ = {
@@ -275,15 +255,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		1E80005025DACC73002E5C62 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1E80005325DACE7F002E5C62 /* Coordinator.swift */,
-				1E80007825DACFC0002E5C62 /* AppCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		1E80005125DACC8E002E5C62 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,19 +279,10 @@
 			isa = PBXGroup;
 			children = (
 				1E80004B25DACC4C002E5C62 /* Controller */,
-				1E80007D25DAD300002E5C62 /* Coordinator */,
 				1E80004D25DACC58002E5C62 /* View */,
 				1E80004C25DACC52002E5C62 /* Model */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		1E80007D25DAD300002E5C62 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1E80007E25DAD30D002E5C62 /* LoginCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		1EB0E11625E2CC31004ECC77 /* Signup */ = {
@@ -330,7 +292,6 @@
 				1EB0E11A25E2CC75004ECC77 /* View */,
 				1E80004E25DACC5E002E5C62 /* ViewModel */,
 				1EB0E11725E2CC42004ECC77 /* Controller */,
-				1EB0E11825E2CC4C004ECC77 /* Coordinator */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -341,14 +302,6 @@
 				1E0C2BF425E07E900019DDA4 /* SignupController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		1EB0E11825E2CC4C004ECC77 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1ED3C18425DB70C7004AC604 /* SignupCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		1EB0E11925E2CC67004ECC77 /* Model */ = {
@@ -394,7 +347,6 @@
 				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
 				1E1CB8D225E3680D00785F6F /* Model */,
 				1E80007B25DAD2CC002E5C62 /* Modules */,
-				1E80005025DACC73002E5C62 /* Coordinator */,
 				1E80004A25DACC3F002E5C62 /* App */,
 				1E80004825DACB89002E5C62 /* Support Files */,
 			);
@@ -404,7 +356,6 @@
 		1ED3C18025DB6C8C004AC604 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				1E2D4AF025E019F800660250 /* Coordinator */,
 				1E2D4AEF25E019F100660250 /* Controller */,
 			);
 			path = Welcome;
@@ -429,7 +380,6 @@
 		1EF76D1F25E424AA0088319B /* Confirmation */ = {
 			isa = PBXGroup;
 			children = (
-				1EF76D2925E4C2A00088319B /* Coordinator */,
 				1EF76D2425E4818B0088319B /* Model */,
 				1EF76D2025E424D50088319B /* Controller */,
 			);
@@ -450,14 +400,6 @@
 				1EF76D2525E481970088319B /* Confirmation.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		1EF76D2925E4C2A00088319B /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1EF76D2A25E4C2B10088319B /* ConfirmationCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		C1847E5359D0704C86C1755F /* Pods */ = {
@@ -616,12 +558,9 @@
 				1E0E701125DAED5100F2A376 /* UITextField+Ext.swift in Sources */,
 				1E7F2FEE25D2B7C800ABCCAE /* UIView+Ext.swift in Sources */,
 				1E0FF24225DF778F00F0AA63 /* OnboardingCell.swift in Sources */,
-				1E2D4AF225E01A0800660250 /* WelcomeCoordinator.swift in Sources */,
-				1E80007F25DAD30D002E5C62 /* LoginCoordinator.swift in Sources */,
 				1E0678D125DE1F8C00CB6605 /* OnboardingController.swift in Sources */,
 				1E1CB8D025E2FD9700785F6F /* UILabel+Ext.swift in Sources */,
 				1E74F7A125E1EF90004926C3 /* SignupVM.swift in Sources */,
-				1E80007925DACFC0002E5C62 /* AppCoordinator.swift in Sources */,
 				1E80008225DAD3D5002E5C62 /* LoginController.swift in Sources */,
 				1E0C2BF525E07E900019DDA4 /* SignupController.swift in Sources */,
 				1E7F300225D2B98B00ABCCAE /* String+Ext.swift in Sources */,
@@ -629,7 +568,6 @@
 				1E80008725DAD672002E5C62 /* Utilities.swift in Sources */,
 				1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */,
 				1E0678D625DE20BF00CB6605 /* Onboarding.swift in Sources */,
-				1EF76D2B25E4C2B10088319B /* ConfirmationCoordinator.swift in Sources */,
 				1E0E700B25DAE8B800F2A376 /* UIFont+Ext.swift in Sources */,
 				1E7F2FF525D2B83A00ABCCAE /* UIButton+Ext.swift in Sources */,
 				1EF76D2225E427EB0088319B /* ConfirmationController.swift in Sources */,
@@ -637,11 +575,9 @@
 				1E7F2FFF25D2B96400ABCCAE /* UITableView+Ext.swift in Sources */,
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
 				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
-				1ED3C18525DB70C7004AC604 /* SignupCoordinator.swift in Sources */,
 				1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */,
 				1EE532E625E1B31F00D11B39 /* CollectionViewDataSource.swift in Sources */,
 				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
-				1E80005425DACE7F002E5C62 /* Coordinator.swift in Sources */,
 				1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */,
 				1E95776125E01279002AFB04 /* WelcomeController.swift in Sources */,
 				1E74F79E25E1E7B9004926C3 /* Signup.swift in Sources */,

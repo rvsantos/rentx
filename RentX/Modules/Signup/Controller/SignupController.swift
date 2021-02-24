@@ -14,7 +14,6 @@ protocol SignupDelegate: class {
 class SignupController: UIViewController {
     
     // MARK: - Properties
-    var coordinator: SignupFlow?
     var signupVM: SignupVM!
     
     private let validityTypeEmail: String.ValidityType = .email

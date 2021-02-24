@@ -12,7 +12,6 @@ class OnboardingController: UIViewController {
     // MARK: - Properties
     
     private var onboardingVM: OnboardingVM = OnboardingVM()
-    weak var coordinator: AppFlowDelegate?
     
     private let containerPageControl: UIView = {
         let view = UIView()
