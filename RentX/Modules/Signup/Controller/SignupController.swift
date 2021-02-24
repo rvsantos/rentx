@@ -121,7 +121,7 @@ extension SignupController {
 // MARK: Selectors
 extension SignupController {
     @objc private func backClick() {
-        self.coordinator?.coordinateToWelcome()
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc private func signupClick() {
@@ -144,7 +144,12 @@ extension SignupController {
                         let content = Confirmation(title: "Conta criada!",
                                                    description: "Agora é só fazer o login e aproveitar.",
                                                    buttonTitle: "Ok")
-                        self?.coordinator?.coordinateToSuccess(content)
+//                        self?.coordinator?.coordinateToSuccess(content)
+                        let confirmationController = ConfirmationController()
+                        confirmationController.content = content
+                        self?.navigationController?.present(confirmationController,
+                                                            animated: true,
+                                                            completion: nil)
                     }
                     print("DEBUG: Cadastro realizado com sucesso! \(user)")
                 } else {

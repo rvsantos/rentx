@@ -135,7 +135,10 @@ extension OnboardingController {
         let newRow = self.getCurrentIndex() + 1
         
         if newRow >= self.onboardingVM.numberOfRows {
-            self.coordinator?.showWelcome()
+//            self.coordinator?.showWelcome()
+            let welcomeController = UINavigationController(rootViewController: WelcomeController())
+            welcomeController.modalPresentationStyle = .fullScreen
+            self.present(welcomeController, animated: true, completion: nil)
         } else {
             let nextIndexPath = IndexPath(row: newRow, section: 0)
             self.collectionView.scrollToItem(at: nextIndexPath, at: .left, animated: true)

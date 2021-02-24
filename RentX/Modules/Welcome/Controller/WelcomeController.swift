@@ -93,14 +93,16 @@ extension WelcomeController {
 // MARK: - Selectors
 extension WelcomeController {
     @objc private func goToLogin() {
-        self.coordinator?.showLogin()
+        let loginController = LoginController()
+        self.navigationController?.pushViewController(loginController, animated: true)
     }
     
     @objc private func goToSignUp() {
-        self.coordinator?.showSignup()
+        let signupController = SignupController()
+        self.navigationController?.pushViewController(signupController, animated: true)
     }
     
     @objc private func goToOnboarding() {
-        self.coordinator?.backOnboarding()
+        self.dismiss(animated: true, completion: nil)
     }
 }

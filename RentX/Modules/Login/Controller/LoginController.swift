@@ -143,7 +143,7 @@ extension LoginController {
     }
     
     @objc private func backClick() {
-        self.coordinator?.coordinateToWelcome()
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc private func loginClick() {
