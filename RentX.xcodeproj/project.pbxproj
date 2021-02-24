@@ -41,7 +41,6 @@
 		1EC1788825D24A3900AD794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC1788625D24A3900AD794E /* LaunchScreen.storyboard */; };
 		1ED3C17E25DB38FC004AC604 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3C17D25DB38FC004AC604 /* Checkbox.swift */; };
 		1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E025E148D600D11B39 /* OnboardingVM.swift */; };
-		1EE532E625E1B31F00D11B39 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */; };
 		1EF76D1D25E40E650088319B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D1C25E40E650088319B /* AuthService.swift */; };
 		1EF76D2225E427EB0088319B /* ConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D2125E427EB0088319B /* ConfirmationController.swift */; };
 		1EF76D2625E481970088319B /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF76D2525E481970088319B /* Confirmation.swift */; };
@@ -86,7 +85,6 @@
 		1EC1788925D24A3900AD794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RentX/Support Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		1ED3C17D25DB38FC004AC604 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		1EE532E025E148D600D11B39 /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
-		1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		1EF76D1C25E40E650088319B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1EF76D2125E427EB0088319B /* ConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationController.swift; sourceTree = "<group>"; };
 		1EF76D2525E481970088319B /* Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
@@ -341,7 +339,6 @@
 			isa = PBXGroup;
 			children = (
 				1E74F79525E1E5D6004926C3 /* Custom Controls */,
-				1EE532E425E1B2D400D11B39 /* DataSource */,
 				1E80005125DACC8E002E5C62 /* Services */,
 				1E80004F25DACC65002E5C62 /* Utils */,
 				1E7F2FEC25D2B7A800ABCCAE /* Extensions */,
@@ -367,14 +364,6 @@
 				1EE532E025E148D600D11B39 /* OnboardingVM.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1EE532E425E1B2D400D11B39 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				1EE532E525E1B31F00D11B39 /* CollectionViewDataSource.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		1EF76D1F25E424AA0088319B /* Confirmation */ = {
@@ -576,7 +565,6 @@
 				1EC1787C25D24A3800AD794E /* AppDelegate.swift in Sources */,
 				1E7F2FF225D2B81A00ABCCAE /* UIImage+Ext.swift in Sources */,
 				1EE532E125E148D700D11B39 /* OnboardingVM.swift in Sources */,
-				1EE532E625E1B31F00D11B39 /* CollectionViewDataSource.swift in Sources */,
 				1E7F2FFC25D2B8EB00ABCCAE /* UIColor+Ext.swift in Sources */,
 				1E7F300525D2B9A600ABCCAE /* Date+Ext.swift in Sources */,
 				1E95776125E01279002AFB04 /* WelcomeController.swift in Sources */,
